@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/aboutMe.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash.debounce@4.0.8/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <header class='navigation'>
+        <div class="inline-block logo ">
+            <img src="./images/AnsleyMoellerLogo.png ">
+        </div>
+        <nav class="inline-block ">
+            <!-- <ul>
+                <li class="inline-block PageLinks ">
+                    <a href="index.html">Portfolio</a></li>
+                <li class="inline-block PageLinks "> <a href="aboutMe.html">About</a></li>
+                <li class="inline-block PageLinks ">Resume</li>
+                <li class="inline-block PageLinks ">Contact</li>
+                <a href="https://www.linkedin.com/in/moeller-ansley"><img class="linkedin" src="./images/LinkedIn.png" alt="LinkedIn Link" /></a>
+                <a href="https://www.instagram.com/princessansleytaylor/"><img class="instagram" src="./images/Instagram.png " alt="Instagram Link" /></a>
+
+
+            </ul> -->
+            <div class='navContainer'>
+                <div id="header" class="container">
+                    <div class="linkthing as-LT1">
+                        <Navigation :links="navLinks"></Navigation>
+                    </div>
+                </div>
+                <a href="https://www.linkedin.com/in/moeller-ansley"><img class="linkedin" src="./images/LinkedIn.png" alt="LinkedIn Link" /></a>
+                <a href="https://www.instagram.com/princessansleytaylor/"><img class="instagram" src="./images/Instagram.png " alt="Instagram Link" /></a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="content ">
+            <div class="aboutherogrid">
+                <div class="aboutherogridimage">
+                    <img class="aboutheroimage parent" src="./images/animated_me.png">
+                </div>
+                <div class="aboutheroright">
+                    <div class="aboutherotext ">
+                        <h1 class="introtext">About Me</h1>
+                        <p>Hello! I'm Ansley and I'm a passionate fan of all things theme parks, travel, and pop culture. I believe that life is too short to not indulge in the things that bring us joy, and for me, that means immersing myself in the world
+                            of theme parks, local cultures, books, and more. </p>
+                    </div>
+                    <button class="connectbutton">Connect With Me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="skillssection">
+            <h1 class="skillstitle skillsheader">Skills</h1>
+            <h2 class="skillstitle skillsdescription">I have listed some skills I have in the design world below.</h2>
+            <div class="skills">
+                <ul class="skillslist skillsLeft">
+                    <li>
+                        <h6>Tools</h6>
+                    </li>
+                    <li class="skillsInnerGrid">
+                        <ul>
+                            <li>Figma</li>
+                            <li>InVision</li>
+                            <li>Adobe XD</li>
+                            <li>Miro</li>
+                            <li>Trello</li>
+                            <li>Zoom</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="skillslist skillsRight">
+                    <li>
+                        <h6>Design</h6>
+                    </li>
+                    <li class="skillsInnerGrid">
+                        <ul>
+                            <li>UX Research</li>
+                            <li>Persona Creation</li>
+                            <li>Interviewing</li>
+                            <li>Decision Flow Diagrams</li>
+                            <li>Conducting Surveys</li>
+                            <li>UI Style Tile/Guide</li>
+                            <li>Heuristic Evaluation</li>
+                            <li>Affinity Diagrams</li>
+                            <li>Wireframing</li>
+                        </ul>
+                        <ul>
+                            <li>Storyboarding</li>
+                            <li>Prototyping</li>
+                            <li>Usability Testing</li>
+                            <li>Color Theory</li>
+                            <li>User Flows</li>
+                            <li>User Journey Map</li>
+                            <li>Empathy Map</li>
+                            <li>Annotations</li>
+                            <li>Card Sorting</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="contactgrid">
+            <div class="contactleft">
+                <h1 class="contactlefttexthead"> Let's grab coffee and discuss design!</h1>
+                <p class="contactlefttext">Ansley Moeller</p>
+                <p class="contactlefttext">UX/UI Portfolio</p>
+                <p class="contactlefttextemail">ansleytaylormoeller.com</p>
+            </div>
+            <div class="contactright">
+                <div>
+                    <h3 class="contactname">Name*</h3>
+                    <input class="input">
+                </div>
+                <div>
+                    <h3 class="contactphone">Phone*</h3>
+                    <input class="input">
+                </div>
+                <div>
+                    <h3 class="contactemail">Email*</h3>
+                    <input class="input">
+                </div>
+                <div>
+                    <h3 class="contactsubject">Subject*</h3>
+                    <input class="input">
+                </div>
+                <div>
+                    <h3 class="contactmessage">Message*</h3>
+                    <input class="input">
+                </div>
+                <button class="contactsubmitbutton"> Submit </button>
+            </div>
+        </div>
+
+    </section>
+    <footer class="navigation footer">
+        <div class="inline-block footerlogo">
+            <img class="parent" src="./images/AnsleyMoellerLogo.png ">
+        </div>
+        <nav class="inline-block ">
+            <!-- <ul>
+                <li class="inline-block PageLinks ">Portfolio</li>
+                <li class="inline-block PageLinks ">About</li>
+                <li class="inline-block PageLinks ">Resume</li>
+                <li class="inline-block PageLinks ">Contact</li>
+                <a href="https://www.linkedin.com/in/moeller-ansley"><img class="linkedin" src="./images/LinkedIn.png" alt="LinkedIn Link" /></a>
+                <a href="https://www.instagram.com/princessansleytaylor/"><img class="instagram" src="./images/Instagram.png " alt="Instagram Link" /></a>
+            </ul> -->
+            <div class='navContainer'>
+                <button id='topBtn' class="returntotopbutton">Return to Top</button>
+                <a href="https://www.linkedin.com/in/moeller-ansley"><img class="linkedin" src="./images/LinkedIn.png" alt="LinkedIn Link" /></a>
+                <a href="https://www.instagram.com/princessansleytaylor/"><img class="instagram" src="./images/Instagram.png " alt="Instagram Link" /></a>
+            </div>
+        </nav>
+    </footer>
+    <section class="copyright">
+        <div>
+            <p>© 2023 Ansley Moeller UX/UI Design Portfolio</p>
+        </div>
+    </section>
+</body>
+
+</html>

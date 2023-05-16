@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash.debounce@4.0.8/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <header class='navigation'>
+        <div class="inline-block logo ">
+            <img src="./images/AnsleyMoellerLogo.png ">
+        </div>
+        <nav class="inline-block">
+            <!-- <ul>
+                <li class="inline-block PageLinks ">
+                    <a href="index.html">Portfolio</a></li>
+                <li class="inline-block PageLinks "> <a href="aboutMe.html">About</a></li>
+                <li class="inline-block PageLinks ">Resume</li>
+                <li class="inline-block PageLinks ">Contact</li>
+                <a href="https://www.linkedin.com/in/moeller-ansley"><img class="linkedin" src="./images/LinkedIn.png" alt="LinkedIn Link" /></a>
+                <a href="https://www.instagram.com/princessansleytaylor/"><img class="instagram" src="./images/Instagram.png " alt="Instagram Link" /></a>
+
+
+            </ul> -->
+            <div class='navContainer'>
+                <div id="header" class="container">
+                    <div class="linkthing as-LT1">
+                        <Navigation :links="navLinks"></Navigation>
+                    </div>
+                </div>
+                <a href="https://www.linkedin.com/in/moeller-ansley"><img class="linkedin" src="./images/LinkedIn.png" alt="LinkedIn Link" /></a>
+                <a href="https://www.instagram.com/princessansleytaylor/"><img class="instagram" src="./images/Instagram.png " alt="Instagram Link" /></a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="content ">
+            <div class="herogrid">
+                <div class="herogridimage">
+                    <img class="heroimage parent" src="./images/Rollercoaster_animation.gif ">
+                </div>
+                <div class="herogridgreeting">
+                    <div class="herotext ">
+                        <h1 class="introtext">Hi, I'm Ansley</h1>
+                        <h1>UX Designer, </h1>
+                        <h1>Empathetic Explorer, </h1>
+                        <h1>Theme Park Enthusiast</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="caseStudies ">
+        <div class="caseStudyGrid ">
+            <div class="drawchangeCard card">
+                <div class="innercard">
+                    <div class="innercardcolumndrawchange">
+                        <img class="drawchangemockup" src="./images/drawchange_mockup.png">
+                    </div>
+                    <div class="innercardcolumndrawchange cardcolumntext">
+                        <h3>Revamping drawchange: Redesigning a Non-Profit Organization's Web Presence</h3>
+                        <button class="casestudybutton">Case Study  > </button>
+                    </div>
+                </div>
+            </div>
+            <div class="greecycleCard card">
+                <div class="innercard">
+                    <div class="innercardcolumngreecycle"><img class="greecyclemockup" src="./images/Greecycle_Mockup.png"></div>
+                    <div class="innercardcolumngreecycle cardcolumntext">
+                        <h3>Revolutionizing Sustainable Living: A Case Study of Greecycle Mobile App</h3>
+                        <button class="casestudybutton">Case Study  > </button>
+                    </div>
+                </div>
+            </div>
+            <div class="fCCCard card">
+                <div class="innercard">
+                    <div class="innercardcolumnfcc"><img class="fccmockup" src="./images/FCC_Mockup.png"></div>
+                    <div class="innercardcolumnfcc cardcolumntext">
+                        <h3>FCC Website Redesign: Improving the Online Presence of a Government Agency</h3>
+                        <button class="casestudybutton">Case Study  > </button>
+                    </div>
+                </div>
+            </div>
+            <div class="planItCard card">
+                <div class="innercard">
+                    <div class="innercardcolumnplanit"><img class="planItmockup" src="./images/PlanIt_Mockup.png"></div>
+                    <div class="innercardcolumnplanit cardcolumntext">
+                        <h3>Plan It: Revitalizing Travel Planning with a Mobile App</h3>
+                        <button class="casestudybutton">Case Study  > </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="contactgrid">
+            <div class="contactleft">
+                <h1 class="contactlefttexthead"> Let's grab coffee and discuss design!</h1>
+                <p class="contactlefttext">Ansley Moeller</p>
+                <p class="contactlefttext">UX/UI Portfolio</p>
+                <p class="contactlefttextemail">ansleytaylormoeller.com</p>
+            </div>
+            <div class="contactright">
+                <h3 class="contactname">Name*</h3>
+                <input class="input">
+                <h3 class="contactphone">Phone*</h3>
+                <input class="input">
+                <h3 class="contactemail">Email*</h3>
+                <input class="input">
+                <h3 class="contactsubject">Subject*</h3>
+                <input class="input">
+                <h3 class="contactmessage">Message*</h3>
+                <input class="input">
+                <button class="contactsubmitbutton"> Submit </button>
+            </div>
+        </div>
+
+    </section>
+    <footer class="navigation footer">
+        <div class="inline-block footerlogo">
+            <img class="parent" src="./images/AnsleyMoellerLogo.png ">
+        </div>
+        <nav class="inline-block ">
+            <!-- <ul>
+                <li class="inline-block PageLinks ">Portfolio</li>
+                <li class="inline-block PageLinks ">About</li>
+                <li class="inline-block PageLinks ">Resume</li>
+                <li class="inline-block PageLinks ">Contact</li>
+                <a href="https://www.linkedin.com/in/moeller-ansley"><img class="linkedin" src="./images/LinkedIn.png" alt="LinkedIn Link" /></a>
+                <a href="https://www.instagram.com/princessansleytaylor/"><img class="instagram" src="./images/Instagram.png " alt="Instagram Link" /></a>
+            </ul> -->
+            <div class='navContainer'>
+                <button id='topBtn' class="returntotopbutton">Return to Top</button>
+                <a href="https://www.linkedin.com/in/moeller-ansley"><img class="linkedin" src="./images/LinkedIn.png" alt="LinkedIn Link" /></a>
+                <a href="https://www.instagram.com/princessansleytaylor/"><img class="instagram" src="./images/Instagram.png " alt="Instagram Link" /></a>
+            </div>
+        </nav>
+    </footer>
+    <section class="copyright">
+        <div>
+            <p>© 2023 Ansley Moeller UX/UI Design Portfolio</p>
+        </div>
+    </section>
+</body>
+
+</html>
