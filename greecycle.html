@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/caseStudies/greeCycle.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash.debounce@4.0.8/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="js/index.js"></script>
+    <title>Greecycle Case Study</title>
+</head>
+
+<body>
+    <header class='navigation'>
+        <div class="inline-block logo ">
+            <img src="./images/AnsleyMoellerLogo.png ">
+        </div>
+        <nav class="inline-block ">
+            <div class='navContainer'>
+                <div id="header" class="container">
+                    <div class="linkthing as-LT1">
+                        <Navigation :links="navLinks"></Navigation>
+                    </div>
+                </div>
+                <a href="https://www.linkedin.com/in/moeller-ansley"><img class="linkedin" src="./images/LinkedIn.png" alt="LinkedIn Link" /></a>
+                <a href="https://www.instagram.com/princessansleytaylor/"><img class="instagram" src="./images/Instagram.png " alt="Instagram Link" /></a>
+            </div>
+        </nav>
+    </header>
+    <section class="greecyclesection container">
+        <div class="greecycleHero row justify-content-center">
+            <div class="greecycleHeroText col-6">
+                <img src="./images/greecycle_images/Hero Text.png">
+            </div>
+            <div class="greecyclemockupgif col-4">
+                <img src="./images/greecycle_images/Greecycle Hi-Fi Prototype.gif">
+            </div>
+        </div>
+    </section>
+    <section class="infoSection">
+        <h3>Problem, Solution, Impact</h3>
+        <p><strong>Problem:</strong> Lack of knowledge and resources make recycling and waste management a challenge for people to recycle everyday items.</p>
+        <p><strong>Solution:</strong> To create an app that will provide users with the proper resources to encourage recycling habits that will last.</p>
+        <p><strong>Impact:</strong> I was able to reduce search time for the Rewards page by 16 seconds: 29 seconds on the original group mid-fidelity app, 12 seconds on the hi-fidelity redesign.</p>
+        <h3>Research</h3>
+        <p>We created a proto-persona named Cynthia Thomas, a young married marketing assistant in NYC who wants to learn more about recycling but is concerned about finding recycling facilities. We conducted 5 user interviews using open-ended and follow-up
+            questions to understand their thoughts and habits about recycling.</p>
+        <p>We conducted an online survey via Google forms and social media platforms, receiving 34 responses that defined our app's goals and needs. The survey revealed that 77.4% of people don't search for proper recycling facilities, but 80.6% consider
+            recycling important. </p>
+        <p>Our survey and interviews aimed to understand current recycling habits and identify barriers to recycling. Using an affinity diagram, we determined key factors for our ideal user. Our research revealed that the majority of people consider recycling
+            important and try to make it a habit. However, many don't dispose of non-recyclable items properly. Challenges include knowing what can be recycled, where to dispose of non-recyclables, and accessibility to recycling services. We also found
+            that incentives or visual feedback would increase motivation to recycle.</p>
+        <div class="researchImgs">
+            <img src='./images/greecycle_images/Recycling Image.png'>
+            <img src='./images/greecycle_images/Greecycle Affinity Diagram.png'>
+        </div>
+        <h4>Competitor Analysis</h4>
+        <p>While researching our competition, we found a few direct competitors who have different strengths such as scanning and searching materials to learn how to recycle them and setting reminders for putting out your recycling. However, they all had
+            weaknesses with technical and visual difficulties. The indirect competitors were mainly basic search algorithms so their weakness is that they aren’t targeted directly at recycling management.</p>
+        <div class='competitorCards'>
+            <div class='card border-secondary'>
+                <img src="./images/greecycle_images/directCompetitors.png">
+            </div>
+            <div class='card border-secondary'>
+                <img class='indirectCompetitorImg' src="./images/greecycle_images/indirectCompetitors.png">
+            </div>
+        </div>
+    </section>
+    <section class="researchSection">
+        <h3>Persona</h3>
+        <h4>Persona Overview</h4>
+        <p>We created Leslie Humblecut, our user persona. Leslie was similar to our proto persona but has all the grouped qualities from our user interviews and survey. Leslie wants to be more informed about the recycling resources near her in the big apple.
+            She has a goal to make recycling more accessible in the city - which really prompted the ideas for this mobile app.
+        </p>
+        <img class="userpersona" src="./images/greecycle_images/Greecycle User Persona.png">
+    </section>
+    <section>
+        <div class="contactgrid">
+            <div class="contactleft">
+                <h1 class="contactlefttexthead"> Let's grab coffee and discuss design!</h1>
+                <p class="contactlefttext">Ansley Moeller</p>
+                <p class="contactlefttext">UX/UI Portfolio</p>
+                <p class="contactlefttextemail">ansleytaylormoeller.com</p>
+            </div>
+            <div class="contactright">
+                <div>
+                    <h3 class="contactname">Name*</h3>
+                    <input class="input">
+                </div>
+                <div>
+                    <h3 class="contactphone">Phone*</h3>
+                    <input class="input">
+                </div>
+                <div>
+                    <h3 class="contactemail">Email*</h3>
+                    <input class="input">
+                </div>
+                <div>
+                    <h3 class="contactsubject">Subject*</h3>
+                    <input class="input">
+                </div>
+                <div>
+                    <h3 class="contactmessage">Message*</h3>
+                    <input class="input">
+                </div>
+                <button class="contactsubmitbutton"> Submit </button>
+            </div>
+        </div>
+
+        <footer class="navigation footer">
+            <div class="inline-block footerlogo">
+                <img class="parent" src="./images/AnsleyMoellerLogo.png ">
+            </div>
+            <nav class="inline-block ">
+                <div class='navContainer'>
+                    <button id='topBtn' class="returntotopbutton">Return to Top</button>
+                    <a href="https://www.linkedin.com/in/moeller-ansley"><img class="linkedin" src="./images/LinkedIn.png" alt="LinkedIn Link" /></a>
+                    <a href="https://www.instagram.com/princessansleytaylor/"><img class="instagram" src="./images/Instagram.png " alt="Instagram Link" /></a>
+                </div>
+            </nav>
+        </footer>
+        <section class="copyright">
+            <div>
+                <p>© 2023 Ansley Moeller UX/UI Design Portfolio</p>
+            </div>
+        </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</html>
