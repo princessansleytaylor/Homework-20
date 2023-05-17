@@ -183,6 +183,90 @@ body {
     align-self: center;
 }
 
+.definitionSection {
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+    margin-right: 75px;
+}
+
+.definitionSection h3 {
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.userjourneymap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.userjourneymapimg {
+    width: 800px;
+    height: auto;
+}
+
+.wireframeSection {
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+    margin-right: 75px;
+}
+
+.wireframeSection h3 {
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+
+/* these arent working */
+
+.sketches {
+    align-self: center;
+}
+
+.midfid {
+    align-self: center;
+}
+
+.styleguide {
+    align-self: center;
+}
+
+.hifi {
+    align-self: center;
+}
+
+
+/* works from here on */
+
+.FinalPrototypeSection {
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+    margin-right: 75px;
+}
+
+.FinalPrototypeSection h3 {
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.reflectionSection {
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+    margin-right: 75px;
+}
+
+.reflectionSection h3 {
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+
+/* Contact Footer  */
+
 .contactgrid {
     display: grid;
     row-gap: 20px;
