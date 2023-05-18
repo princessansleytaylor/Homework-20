@@ -199,11 +199,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .userjourneymapimg {
     width: 800px;
     height: auto;
+}
+
+.ujm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .wireframeSection {
@@ -218,31 +225,53 @@ body {
     font-weight: 600;
 }
 
-
-/* these arent working */
-
 .sketches {
-    align-self: center;
+    padding-left: 80px;
 }
 
 .midfid {
-    align-self: center;
-}
-
-.styleguide {
-    align-self: center;
+    padding-left: 70px;
 }
 
 .hifi {
-    align-self: center;
+    padding-left: 40px;
 }
 
+.fpmtext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-/* works from here on */
+.fpm {
+    width: 800px;
+    height: auto;
+}
+
+.upperpadding {
+    margin-top: 25px;
+}
+
+.relfectionupperpadding {
+    margin-top: 12px;
+}
+
+.finalprototypetitle {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-weight: bold;
+}
 
 .FinalPrototypeSection {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    row-gap: 20px;
+    column-gap: 15px;
+    justify-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "greecyclemockupgif" "buttonstext";
     margin-left: 55px;
     margin-right: 75px;
 }
@@ -257,11 +286,28 @@ body {
     flex-direction: column;
     margin-left: 55px;
     margin-right: 75px;
+    margin-top: 30px;
 }
 
 .reflectionSection h3 {
     margin-top: 25px;
     font-weight: 600;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+}
+
+.btn-outline-primary {
+    margin-bottom: 15px;
+}
+
+.buttonstext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
 }
 
 
